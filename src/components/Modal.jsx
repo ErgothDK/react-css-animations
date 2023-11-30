@@ -10,10 +10,10 @@ export default function Modal({ title, children, onClose }) {
         className="modal"
         variants={{
           hidden: { opacity: 0, y: 300 },
-          shown: { opacity: 1, y: 0 },
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
-        animate="shown"
+        animate="visible"
         exit="hidden"
         transition={{ duration: 0.3 }}
       >
